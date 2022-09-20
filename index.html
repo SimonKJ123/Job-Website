@@ -24,6 +24,8 @@
                 <a class="btn m-1 btn-lg btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Mit CV</a>
                 <button class="btn m-1 btn-lg btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Om Mig</button>
                 <button class="btn m-1 btn-lg btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Skoleforløb</button>
+                <button class="btn m-1 btn-lg btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample3">Instruktionsvideo - Dansk</button>
+                <button class="btn m-1 btn-lg btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample3">Introduction Video - English</button>
             </p>
             <div class="row">
                 <div class="col">
@@ -36,6 +38,7 @@
                 <div class="col">
                     <div class="collapse" id="multiCollapseExample2">
                         <div class="card card-body">
+                            <h5>Om Mig</h5>
                             Hej mit navn er Simon Karas-Jensen.
                             Jeg er 19 år gammel bruger meget af min fritid på at spille computer og træne.
                             Jeg har altid været meget fasineret af computer siden jeg var lille. Da jeg var omrking 7-8 år gammel gik jeg på et kodehold kaldt kodingpirates hvor jeg arbejdet med python og Javascript.
@@ -57,9 +60,91 @@
                 </div>
             </div>
         </div>
+        <div class="col">
+            <div class="collapse" id="multiCollapseExample4">
+                <div class="card card-body">
 
+                    <h5>Video Om mig</h5>
 
+                    Video in the making
+
+                    <div style="text-align:center">
+                        <button onclick="playPause()">Play/Pause</button>
+                        <button onclick="makeBig()">Big</button>
+                        <button onclick="makeNormal()">Normal</button>
+                        <br><br>
+                        <video id="video1" width="420">
+                            <source src=".mp4" type="video/mp4">
+                            <source src=".ogg" type="video/ogg">
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+
+                    <script>
+                        var myVideo = document.getElementById("video");
+
+                        function playPause() {
+                            if (myVideo.paused)
+                                myVideo.play();
+                            else
+                                myVideo.pause();
+                        }
+
+                        function makeBig() {
+                            myVideo.width = 560;
+                        }
+
+                        function makeNormal() {
+                            myVideo.width = 420;
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="col">
+        <div class="collapse" id="multiCollapseExample5">
+            <div class="card card-body">
+                <h5>Video about me</h5>
+
+                Video in the making
+
+                <div style="text-align:center">
+                    <button onclick="playPause()">Play/Pause</button>
+                    <button onclick="makeBig()">Big</button>
+                    <button onclick="makeNormal()">Normal</button>
+                    <br><br>
+                    <video id="video1" width="420">
+                        <source src=".mp4" type="video/mp4">
+                        <source src=".ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+
+                <script>
+                    var myVideo = document.getElementById("video");
+
+                    function playPause() {
+                        if (myVideo.paused)
+                            myVideo.play();
+                        else
+                            myVideo.pause();
+                    }
+
+                    function makeBig() {
+                        myVideo.width = 560;
+                    }
+
+                    function makeNormal() {
+                        myVideo.width = 420;
+                    }
+                </script>
+
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
