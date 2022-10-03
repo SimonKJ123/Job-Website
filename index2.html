@@ -17,31 +17,32 @@
 </head>
 <body>
     <div>
-        <h2 class="py-2 display-2 text-center text-white bg-primary">Velkomen til Simons Website</h2>
+        </div>
+        <h2 class="py-2 display-2 text-center text-white bg-primary">Welcome to Simon's Website</h2>
         <div class="text-center">
             <div class="container">
-                <a href="index2.html">
-                    <button class="btn btn-primary btn-lg">English Verison</button>
+                <a href="index.html">
+                    <button class="btn btn-primary btn-lg">Dansk Version</button>
                 </a>
             </div>
             <p>
-                <a class="btn m-1 btn-lg btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Mit CV</a>
-                <button class="btn m-1 btn-lg btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Om Mig</button>
-                <button class="btn m-1 btn-lg btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Skoleforløb</button>
-                <button class="btn m-1 btn-lg btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample3">Instruktionsvideo - Dansk</button>
+                <a class="btn m-1 btn-lg btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">My CV</a>
+                <button class="btn m-1 btn-lg btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">About Me</button>
+                <button class="btn m-1 btn-lg btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">School Course</button>
+                <button class="btn m-1 btn-lg btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample3">Introduction Video</button>
             </p>
             <div class="row">
                 <div class="col">
                     <div class="collapse" id="multiCollapseExample1">
                         <div class="card card-body">
-                            <img src="billeder/cv.png" alt="">
+                            <img src="billeder/ENG cv.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="collapse" id="multiCollapseExample2">
                         <div class="card card-body">
-                            <h5>Om Mig</h5>
+                            <h5>About Me</h5>
                             Hej mit navn er Simon Karas-Jensen.
                             Jeg er 19 år gammel bruger meget af min fritid på at spille computer og træne.
                             Jeg har altid været meget fasineret af computer siden jeg var lille. Da jeg var omrking 7-8 år gammel gik jeg på et kodehold kaldt kodingpirates hvor jeg arbejdet med python og Javascript.
@@ -53,7 +54,7 @@
             <div class="col">
                 <div class="collapse" id="multiCollapseExample3">
                     <div class="card card-body">
-                        <h5>Skoleforløb</h5>
+                        <h5>School</h5>
                         Jeg started i folkskolen da jeg var syv på Gerbrandskolen.
                         Da jeg kom til syvne klasse skiftet jeg til Højdevangsskolen.
                         Efter nine klasse gik jeg på Grundforløb 1 og 2 på Tec Fredriksberg.
@@ -63,49 +64,6 @@
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="collapse" id="multiCollapseExample4">
-                <div class="card card-body">
-
-                    <h5>Video Om Mig</h5>
-
-                    Video in the making
-
-                    <div style="text-align:center">
-                        <button onclick="playPause()">Play/Pause</button>
-                        <button onclick="makeBig()">Big</button>
-                        <button onclick="makeNormal()">Normal</button>
-                        <br><br>
-                        <video id="video1" width="420">
-                            <source src=".mp4" type="video/mp4">
-                            <source src=".ogg" type="video/ogg">
-                            Your browser does not support HTML video.
-                        </video>
-                    </div>
-
-                    <script>
-                        var myVideo = document.getElementById("video");
-
-                        function playPause() {
-                            if (myVideo.paused)
-                                myVideo.play();
-                            else
-                                myVideo.pause();
-                        }
-
-                        function makeBig() {
-                            myVideo.width = 560;
-                        }
-
-                        function makeNormal() {
-                            myVideo.width = 420;
-                        }
-                    </script>
-
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="col">
         <div class="collapse" id="multiCollapseExample5">
             <div class="card card-body">
